@@ -15,10 +15,9 @@ class String
   end
 
   def count_sentences
-    cases = ["...","!","!!","?"]
+    
     array = self.split(".")
-    array.each_with_index.collect do |v,i|
-      array.split(cases[i])
+    
     end
    array.length
   end
