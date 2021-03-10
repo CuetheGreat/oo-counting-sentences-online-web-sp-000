@@ -18,7 +18,7 @@ class String
     cases = [".","...","!","!!","?"]
     array = []
     cases.each do |i|
-      if self.split(i)
+      if self.split(i) != nil
         array << self.split(i)
       end
     end
