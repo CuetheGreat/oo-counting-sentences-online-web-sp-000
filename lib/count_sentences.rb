@@ -15,14 +15,11 @@ class String
   end
 
   def count_sentences
-    cases = [".","...","!","!!","?"]
-    array = []
-    cases.each do |i|
-      if self.split(i)[0] != nil
-        array << self.split(i)
-      end
+    cases = ["...","!","!!","?"]
+    array = self.split(".")
+    array.each_with_index.collect do |v,i|
+      array.split(cases[i])
     end
-    print array
    array.length
   end
 end
