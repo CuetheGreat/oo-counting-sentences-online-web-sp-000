@@ -22,6 +22,7 @@ class String
         array << self.split(i)
       end
     end
+    print array
    array.length
   end
 end
